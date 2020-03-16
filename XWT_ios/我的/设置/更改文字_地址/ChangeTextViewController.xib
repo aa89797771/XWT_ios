@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeTextViewController" customModule="todayNews" customModuleProvider="target">
+            <connections>
+                <outlet property="borderBottom" destination="5SI-B4-ffW" id="Toz-jg-LRk"/>
+                <outlet property="nameText" destination="Te1-4A-7tW" id="RKC-uS-hxR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sherry 雪莉" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Te1-4A-7tW">
+                    <rect key="frame" x="18" y="100" width="339" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wxV-wg-ST1"/>
+                    </constraints>
+                    <color key="textColor" red="0.19997966289520264" green="0.20001339912414551" blue="0.19996902346611023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="inputNameText:" destination="-1" eventType="editingChanged" id="X4A-gM-hoe"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SI-B4-ffW">
+                    <rect key="frame" x="15" y="150" width="345" height="1"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Vbk-vH-oYm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T29-WG-Vsi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="hZa-Rv-knS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T29-WG-Vsi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="956-8X-her"/>
+                <constraint firstAttribute="trailing" secondItem="5SI-B4-ffW" secondAttribute="trailing" constant="15" id="AKx-k4-elx"/>
+                <constraint firstItem="T29-WG-Vsi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q2t-9W-Nab"/>
+                <constraint firstItem="Te1-4A-7tW" firstAttribute="top" secondItem="T29-WG-Vsi" secondAttribute="bottom" constant="5" id="Tqm-hK-y4x"/>
+                <constraint firstItem="T29-WG-Vsi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WH2-UB-Ax8"/>
+                <constraint firstItem="5SI-B4-ffW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="hE7-YU-GJF"/>
+                <constraint firstItem="5SI-B4-ffW" firstAttribute="top" secondItem="Te1-4A-7tW" secondAttribute="bottom" id="ldJ-Mx-tgE"/>
+                <constraint firstItem="Te1-4A-7tW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="nVL-rC-Aun"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Te1-4A-7tW" secondAttribute="trailing" constant="18" id="z3r-cg-D72"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.15942028985509" y="99.776785714285708"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bn2-12-Eep" customClass="CustomAlertBox1" customModule="todayNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qsd-tH-5Ij">
+                    <rect key="frame" x="0.0" y="1" width="248" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="确认要清除缓存吗？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-Bm-TTN">
+                    <rect key="frame" x="12" y="27" width="220" height="13"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.19997966289520264" green="0.20001339912414551" blue="0.19996902346611023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3Z-DT-MUs">
+                    <rect key="frame" x="12" y="63" width="110" height="35"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.73327058553695679" green="0.73337489366531372" blue="0.73323768377304077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancel:" destination="bn2-12-Eep" eventType="touchUpInside" id="iv3-co-Gk8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9y-dL-Zub">
+                    <rect key="frame" x="126" y="63" width="110" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.83927440643310547" green="0.2064586877822876" blue="0.19829100370407104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="确认"/>
+                    <connections>
+                        <action selector="confirm:" destination="bn2-12-Eep" eventType="touchUpInside" id="5Nw-Cu-baZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="y7O-c7-8Xn"/>
+            <connections>
+                <outlet property="cancelBtn" destination="q3Z-DT-MUs" id="8l5-mf-o7K"/>
+                <outlet property="confirmBtn" destination="B9y-dL-Zub" id="FPc-j1-FSV"/>
+                <outlet property="tipsContent" destination="HsV-Bm-TTN" id="aFY-DR-EFH"/>
+                <outlet property="viewWrap" destination="Qsd-tH-5Ij" id="PNF-Q7-3XA"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="-195.53571428571428"/>
+        </view>
+    </objects>
+</document>

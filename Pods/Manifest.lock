@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - HandyJSON (5.0.1)
+  - KeychainSwift (19.0.0)
+  - Kingfisher (4.10.1)
+  - ObjectMapper (3.5.1)
+  - SnapKit (4.2.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - HandyJSON
+  - KeychainSwift
+  - Kingfisher
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - HandyJSON
+    - KeychainSwift
+    - Kingfisher
+    - ObjectMapper
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 9625328922845680f28338c7ef9fc8b000e7ee4a
+
+COCOAPODS: 1.8.4

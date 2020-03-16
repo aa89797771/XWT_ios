@@ -1,0 +1,11 @@
+platform :ios, '9.0'		#固定格式
+	    use_frameworks!			#将库转换为静态的
+	    target 'XWT_ios' do			#项目名字
+		pod "Alamofire"			#网络请求
+		pod "AlamofireObjectMapper"
+		pod "SwiftyJSON"		#JSON库
+		pod "KeychainSwift"		#uuid - 唯一标识符?
+		pod "HandyJSON"			#数据转换
+		pod "Kingfisher"		#ImageCache
+		pod "SnapKit"			#AutoLayout
+	    end

@@ -1,0 +1,6 @@
+framework module Pods_XWT_ios {
+  umbrella header "Pods-XWT_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
